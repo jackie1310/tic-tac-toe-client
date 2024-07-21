@@ -1,5 +1,56 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(219, 218, 218);
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.custom-button {
+  width: 6rem; /* w-24 equivalent */
+  height: 6rem; /* h-24 equivalent */
+  background-color: white; /* bg-white equivalent */
+  border: 2px solid #d1d5db; /* border-2 border-gray-300 equivalent */
+  font-size: 1.5rem; /* text-2xl equivalent */
+  transition: background-color 0.2s ease-in-out; /* transition duration-200 ease-in-out equivalent */
+}
+
+.custom-button:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 equivalent */
+}
+
+.custom-button:focus {
+  background-color: #e5e7eb; /* focus:bg-gray-200 equivalent */
+  outline: none; /* focus:outline-none equivalent */
+}
+.status {
+  font-size: 1rem;
+}
+
+.status-win {
+  font-size: 4rem;
+  margin-top: 10px;
+  color: green;
+  font-weight: 700;
 }
 
 .App-logo {
